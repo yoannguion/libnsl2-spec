@@ -28,7 +28,7 @@ be able to link against TI-RPC for IPv6 support.
 Summary: Development files for libnsl
 Group: Development/Libraries
 Requires: %{name}%{?_isa} = %{version}-%{release}
-Conflicts: glibc-devel < 2.26.9000-40
+#Conflicts: glibc-devel < 2.26.9000-40
 
 %description devel
 Development files for libnsl2
