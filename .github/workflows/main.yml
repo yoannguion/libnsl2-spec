@@ -23,4 +23,5 @@ jobs:
           SPEC_FILE: libnsl2.spec
           RELEASE_TAG: v1.2.0
           RELEASE_GITHUB_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
+          PRE_BUILDDEP: rpm -i https://github.com/yoannguion/libtirpc-spec/releases/download/v1.1.4/libtirpc-1.1.4-4.el7.x86_64.rpm && yum -y install https://github.com/yoannguion/libtirpc-spec/releases/download/v1.1.4/libtirpc-devel-1.1.4-4.el7.x86_64.rpm
         uses: docker://yoannguion/rpmbuilder:el7
